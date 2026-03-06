@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca CEP por Endereço</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Buscar CEP</h2>
+        <p>Preencha os dados para localizar o CEP</p>
+        
+        <div class="form">
+            <input type="text" id="uf" placeholder="UF (ex: SP)" maxlength="2">
+            <input type="text" id="cidade" placeholder="Cidade (ex: Sorocaba)">
+            <input type="text" id="rua" placeholder="Rua (ex: Avenida Paulista)">
+            <button onclick="buscarCEP()">Pesquisar</button>
+        </div>
+
+        <div id="resultado" class="resultado-oculto">
+            </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
